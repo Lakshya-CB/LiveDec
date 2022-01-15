@@ -1,6 +1,7 @@
 package Lrc_14;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Intersec_AL {
 	public static void main(String[] args) {
@@ -50,13 +51,14 @@ public class Intersec_AL {
 			}
 			int digit = sum % 10;
 			carr = sum / 10;
-			ans.add(0, digit);
+			ans.add( digit);
 			idx1--;
 			idx2--;
 			
 
 		}
 //		System.out.println(ans);
+		Collections.reverse(ans);
 		return ans;
 	}
 }
